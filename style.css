@@ -1,0 +1,299 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    background-color: #000429;
+
+}
+
+.Header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 6rem;
+
+    
+}
+
+
+.Logotag{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    width: 30%;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'Gruppo', cursive;
+
+}
+.Logo{
+    width: 33%;
+    margin-top: -10px;
+
+}
+
+.social{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 30%;
+    height: 2rem;
+}
+
+.fa-shake {
+    animation: shake 0.5s infinite;
+  }
+  
+  @keyframes shake {
+    0% { transform: translate(0, 0); }
+    25% { transform: translate(-5px, 0); }
+    50% { transform: translate(0, 0); }
+    75% { transform: translate(5px, 0); }
+    100% { transform: translate(0, 0); }
+  }
+  
+.hero{
+    
+    height: 11.5rem;
+    
+}
+
+.hero img{  
+    position: absolute;
+    width: 100%;
+    z-index: -1;   
+  }
+
+  .overlay {
+    position: absolute;
+    color: #ffffff;
+    font-family: 'Gruppo', cursive;
+    font-size: 100%;
+    font-weight: bolder;
+  }
+  
+  .overlay p {
+    margin-top: 160px;
+    margin-left: 650px;
+    font-size: x-small;
+
+  }
+
+
+.yellowsection{
+   
+    position: relative;
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  .yellowsectionh1{
+    font-size: 22px;
+    line-height: 25px;
+    letter-spacing: 0.19em;
+    color: #FFFFFF;
+    font-family: 'Gruppo', cursive;
+    position: relative;
+    font-weight: bolder;
+    font-size: 150%;
+    display: flex;
+    border: 2px solid white;
+    padding: 6px;
+    box-shadow:2px 2px 2px white;
+    inset: 2px;
+    
+  }
+  .recentpodcast {
+    display: flex;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+   
+    padding-bottom: 20px; /* Add padding to remove the gap */
+  }
+  
+  .recentpodcast::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .Card1 {
+    flex: 0 0 auto;
+    width: 300px;
+    height: 200px;
+    scroll-snap-align: start;
+    margin-right: 20px;
+    box-shadow: 2px 2px 2px white;
+   
+  }
+  
+  .Card1 .video-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border: 2px solid white;
+    border-radius: 8px;
+    
+  }
+  
+  .Card1 .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 8px;
+ 
+ 
+  }
+  
+  /* Animation for sliding from right to left */
+  @keyframes slide {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .recentpodcast .Card1:not(:last-child) {
+    animation: slide 20s linear infinite; /* Adjust the duration as needed */
+  }
+.writeup{
+
+    height: 9.5rem;
+}
+
+.writeup{
+    display: flex;
+    flex-direction:column;
+   
+    color: #FFFFFF;
+    font-family: 'Gruppo', cursive;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+ 
+   
+  }
+
+  .p1{
+ 
+    
+   
+    line-height: 1.8;
+    text-align: center;
+    font-weight: bolder;
+    position: absolute;
+
+   
+  }
+
+  .p2{
+    position: relative;
+    line-height: 1.8;
+    margin-left: 150px;
+    margin-top: 100px;
+    width: 70%;
+    font-weight: bolder;
+    text-align: center;
+  }
+
+  .register{
+    border: 2px solid white;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 5rem;
+    color: #ffffff;
+    font-family: 'Gruppo', cursive;
+    font-weight: bolder;
+    margin-top: 40px;
+    margin-left: 380px;
+    max-width: 360px;
+    padding: 20px;
+    box-shadow: 2px 2px 2px white;
+  }
+
+
+  .write_up img{
+    width: 8rem;
+  }
+
+
+  .write_up{
+    display: flex;
+    flex: row;
+    width: 70%;
+    border: 2px solid rgb(241, 238, 238);
+    height: 10rem;
+    margin:auto;
+    margin-top: 20px;
+    box-shadow: 2px 2px 2px white;
+}
+
+
+  
+  .write_up p{
+    position: absolute;
+    width: 597px;
+    height: 106px;
+    font-family: 'Gruppo', cursive;
+    font-style: bold;
+    line-height: 21px;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    margin-left: 162px;
+    margin-top: 35px;
+
+  }
+
+.footer{
+   
+
+    color: white;
+    height: 5rem;
+    margin-top: 3px;
+   
+ 
+}
+
+.copyright{
+    color: white;
+    display: flex;
+    font-family: 'Gruppo', cursive;
+    position: absolute;
+    width: 195px;
+    margin-left: 490px;
+    flex-direction: row;
+    align-items: baseline;
+    flex-wrap: wrap;
+    font-size: xx-small;
+
+  }
+
+  .disclaimer{    
+    color: white;
+    display: flex;
+    font-family: 'Gruppo', cursive;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center
+  }
+
+  .disclaimer p{
+    font-size: xx-small;
+    align-items: center;
+  }
